@@ -1,6 +1,6 @@
 # Automated CpG/CHG/CHH methylation detection on Enhancers
 
-This repository provides a simple, flexible script to automate the execution of Jupyter notebooks across multiple cell types using [Papermill](https://papermill.readthedocs.io/). It runs a specified notebook with customizable parameters for each cell line in turn.
+This repository automates the end-to-end workflow of preparing data for transcription factor (TF) binding sites within cell type–specific enhancer regions, with integrated CpG methylation profiling.
 
 ## 📁 Repository Structure
 
