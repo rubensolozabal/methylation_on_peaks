@@ -35,7 +35,8 @@ for origin_cell in cells:
                 'origin_tf': tf,
                 'origin_binding': binding,
                 'origin_cpg': pos_cpg,
-                'target_cell': target_cell
+                'target_cell': target_cell,
+                'target_tf': tf,
             }
         )
 
@@ -49,5 +50,6 @@ for origin_cell in cells:
                 'origin_binding': binding,
                 'origin_cpg': pos_cpg,
                 'target_cell': target_cell,
+                'target_tf': tf,
             }
         )
