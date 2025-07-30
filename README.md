@@ -2,14 +2,6 @@
 
 This repository automates the end-to-end workflow of preparing data for transcription factor (TF) binding sites within cell type–specific enhancer regions, with integrated CpG methylation profiling.
 
-## 📁 Repository Structure
-
-```
-├── run_notebooks.py       # Main script to execute notebooks via Papermill
-├── 07-Logo_enhancers_cpg_v2.ipynb  # Notebook template to be parameterized and executed
-└── README.md              # This file
-```
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -38,6 +30,14 @@ This repository automates the end-to-end workflow of preparing data for transcri
    ```bash
    pip install papermill
    ```
+## 💾 Downloading Data
+
+A `download_data.sh` script is included to automate fetching all required raw data into the `data/` directory. Make sure you have execute permissions:
+
+```bash
+chmod +x download_data.sh
+bash download_data.sh
+```
 
 ## ⚙️ Configuration & Parameters
 
@@ -71,7 +71,7 @@ methyl_pos = 1  # start from 1!!!
 Run the main script to execute the notebook for each cell type:
 
 ```bash
-python run_notebooks.py
+python execute/execute_enhancers_TF.py
 ```
 
 For each `origin_cell` in `CELLS`, the script will:
